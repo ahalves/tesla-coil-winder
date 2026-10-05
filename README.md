@@ -9,6 +9,20 @@ tesla coil secondary winder for a 129mm od pipe
 - rollers: 4x m5x20 screws are required per jig to act as the axles around which the rollers rotate
 - code: for an esp32 and a4988 stepper driver. connections depend on mcu, however any arduino compatible mcu can be used subject to pin number changes
 
+### setup:
+
+print 2 rollers per jig, and screw them in through the jig, using 4 m5x20 screws per jig.
+
+### wiring: 
+
+connect esp32 pins 12 and 14 to one of the two rotary encoder pins each, order does not matter.
+
+connect the STEP pin of your A4988 to pin 25, and DIR to pin 26. connect your stepper motor to your A4988 module based on its pinout.
+
+
+---
+
+
 the jigs may be screwed in to a plank of wood, or a material of your choice.
 
 likewise, you may also choose to use a cordless drill for rotation. for the stepper route, it will be necessary to drill a small hole where the divot is in the end cap. for the drill method, drill directly into the plastic in the direction you will be turning in.
